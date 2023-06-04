@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Задание 1 */
+
+        let num1 = prompt('Введите число');
+        let num2 = prompt('Введите число');
+        console.log(num1 <= 1, num2 >= 3)
+
+        /* Задание 2 */
+
+        let test = true;
+        (test === true) ? console.log('+++') : console.log('---');
+
+        /* Задание 3 */
+
+        let day = prompt('Введите число из интервала от 1 до 31');
+        if (day >= 1 && day < 11)
+        {
+            console.log('1-я декада')
+        }
+        else if (day > 10 && day < 21)
+        {
+            console.log('2-я декада')
+        }
+        else if (day > 20 && day < 32)
+        {
+            console.log('3-я декада')
+        }
+        else
+        {
+            alert('Число не из интервала');
+        }
+        /* Задание 4 */
+
+        let number = prompt('Введите корректное положительное целое число');
+        let s = Math.floor(number / 100)
+        let d = Math.floor(number / 10)
+        let e = number % 10;
+        console.log(`В числе ${number} количество сотен: ${s}, десятков: ${d}, единиц: ${e}`);
+    </script>
+</body>
+</html>
+
