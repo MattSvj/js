@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //задание 1
+    for (let i = 0; i <= 10; i++) {
+        if (i === 0) {
+            console.log(`${i} – это ноль`);
+        } else if (i % 2 === 0) {
+            console.log(`${i} – четное число`);
+        } else {
+            console.log(`${i} – нечетное число`);
+        }
+    }
+    i = 0;
+    //задание 2
+    const arr = [1, 2, 3, 4, 5, 6, 7];
+    const newArr = arr.filter((el) => el <= 3 || el >= 6);
+    console.log(newArr);
+
+    //задание 3
+    const arr2 = [];
+    for (let i = 0; i < 5; i++) {
+        arr2.push(Math.floor(Math.random() * 10));
+    }
+
+    const sum = arr2.reduce((acc, el) => acc + el, 0);
+    const min = Math.min(...arr2);
+    const hasThree = arr2.includes(3);
+
+    console.log('Массив:', arr2);
+    console.log('Сумма элементов:', sum);
+    console.log('Минимальный элемент:', min);
+    console.log('Есть ли число 3:', hasThree);
+
+    //задание 4
+    for (let j = 1; j <= 20; j++) {
+        console.log('x'.repeat(j));
+    }
+
+    </script>
+</body>
+</html>
